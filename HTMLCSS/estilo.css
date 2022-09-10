@@ -1,0 +1,185 @@
+:root{
+    --branco: #f3f3f3;
+    --cinza: #606060;
+    --preto: #181717;
+    --azul: #2429AF;
+}
+
+.container{
+    max-width: 1120px;
+    margin: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;   
+    background-color: var(--branco);
+}
+
+header .cabeçalho{
+    display: flex;
+}
+.cabeçalho h2{
+    margin-right: auto;
+    
+}
+
+.cabeçalho h5{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.cabeçalho a{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.section-1{
+    display: flex;
+    margin-top: 100px;
+}
+
+.section-1 h1{
+    font-size: 40px;
+}
+
+.section-1 h3{
+    margin-top: 110px;
+    margin-left: 480px;
+    color: var(--cinza);
+}
+
+.simbol{
+    width: 45px;
+    margin-top: 100px;
+    width: 80.61px;
+    height: 85.04px;
+}
+
+.section-2{
+    display: flex;
+    margin-top: 180px;
+}
+
+.texto{
+    display: flex;
+    height: 365px;
+    flex-direction: column;
+}
+
+.texto h5{
+    color: var(--cinza);
+}
+
+.texto a{
+    margin-top: auto;
+    font-weight: bold;
+    color: black;
+}
+
+.img_local{
+    width: 640px;
+    height: 364.68px;
+    margin-left: auto;
+    background-color: var(--cinza);
+}
+
+.linha{
+    padding: 0px 0px 2px 0px;
+    background-color: var(--cinza);
+    margin-top: 100px;
+}
+
+footer{
+    display: flex;
+
+}
+
+footer h4{
+    color: var(--azul);
+    margin-top: 35px;
+}
+
+.ckd{
+    display: flex;
+    margin-left: auto;
+}
+
+.ckd h4{
+    color: var(--preto);
+    margin-right: 15px;
+}
+
+/*Tema Dark*/
+.button{
+    width: 50px;
+    height: 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    position: relative;
+    border: 4px solid black;
+
+}
+
+.button.ativar{
+    width: 50px;
+    height: 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    position: relative;
+    border: 4px solid #fff;
+
+}
+
+.button:before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: black;
+    border-radius: 50%;
+    left: 2px;
+    top: 50%;
+    transform: translate(-50%);
+    transition: left .5s;
+    transition: background .8s;
+    position: absolute;
+}
+
+.button.ativar::before{
+    background: #fff;
+    left: 30px;
+}
+
+body.ativar{
+    background-color: #191a1c;
+    color: #fff;
+
+}
+
+body.ativar .cabeçalho a{
+    color: #fff;
+}
+
+body.ativar .section-1 h3{
+    color: rgb(208, 197, 197);
+}
+
+body.ativar .section-2 a{
+    color: #fff;
+}
+
+body.ativar .section-2 .img_local{
+    background-color: #a09898;
+
+}
+body.ativar footer h4{
+    color: rgb(0, 140, 255);
+}
+
+body.ativar footer .ckd h4{
+    color: #fff;
+}
