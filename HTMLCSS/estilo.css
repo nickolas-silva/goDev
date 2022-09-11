@@ -141,8 +141,8 @@ footer h4{
     height: 18px;
     background: black;
     border-radius: 50%;
-    left: 2px;
-    top: 50%;
+    
+    top: 15%;
     transform: translate(-50%);
     transition: left .5s;
     transition: background .8s;
